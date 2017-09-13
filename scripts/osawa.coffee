@@ -8,7 +8,12 @@ module.exports = (robot) ->
 
   robot.respond /おはよう/i, (msg) ->
     msg.send "おはようございます！"
-
+  robot.respond /こんにちは/i, (msg) ->
+    msg.send "こんにちは！"
+  robot.respond /こんばんわ/i, (msg) ->
+    msg.send "こんばんわ！"
+  robot.respond /おやすみ/i, (msg) ->
+    msg.send "おやすみなさい！"
 
   robot.respond /詳細を教えて/i, (msg) ->
     msg.send "●●社の●●案件の金額が●●円になりました"
