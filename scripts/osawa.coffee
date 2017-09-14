@@ -25,14 +25,14 @@ module.exports = (robot) ->
     msg.send "●●社の●●案件の金額が●●円になりました"
 
   robot.respond /今期予算は達成する？/i, (msg) ->
-    msg.send "予算●●Mに対して●●Mで達成見込です。"
+    msg.send "予算4079Mに対して4100Mで達成見込です。"
   robot.respond /今期の予算は達成する？/i, (msg) ->
-    msg.send "予算●●Mに対して●●Mで達成見込です。"
+    msg.send "予算4079Mに対して4100Mで達成見込です。"
 
   robot.respond /来期予算は達成する？/i, (msg) ->
-    msg.send "予算●●Mに対して●●Mです。見込が●●不足します。"
+    msg.send "予算4486Mに対して2467Mです。見込が2019M不足します。"
   robot.respond /来期の予算は達成する？/i, (msg) ->
-    msg.send "予算●●Mに対して●●Mです。見込が●●不足します。"
+    msg.send "予算4486Mに対して2467Mです。見込が2019M不足します。"
 
 
 
