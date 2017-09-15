@@ -29,6 +29,11 @@ module.exports = (robot) ->
   robot.respond /今期の予算は達成する？/i, (msg) ->
     msg.send "予算4079Mに対して4100Mで達成見込です。"
 
+  robot.respond /予算の進捗を教えて/i, (msg) ->
+    msg.send "予算4079Mに対して4100Mで達成見込です。"
+  robot.respond /予算進捗を教えて/i, (msg) ->
+    msg.send "予算4079Mに対して4100Mで達成見込です。"
+
   robot.respond /来期予算は達成する？/i, (msg) ->
     msg.send "予算4486Mに対して2467Mです。見込が2019M不足します。"
   robot.respond /来期の予算は達成する？/i, (msg) ->
