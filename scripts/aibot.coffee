@@ -1,7 +1,7 @@
 module.exports = (robot) ->
-  robot.respond /‚İ‚ñ‚È‚É’Ê’m‚µ‚Ä/i, (msg) ->
+  robot.respond /ã¿ã‚“ãªã«é€šçŸ¥ã—ã¦/i, (msg) ->
     request = require('request');
-    request.get('https://slack.com/api/chat.postMessage?token=xoxb-240392778389-Wzxl4A0TNuCc0v4d6yR8tq7R&channel=%23test&username=motionbot&text=Œ©‚İ‚ªŒ¸­‚µ‚Ü‚µ‚½B&as_user=true', (error, response, body) ->
+    request.get('https://slack.com/api/chat.postMessage?token=xoxb-240392778389-Wzxl4A0TNuCc0v4d6yR8tq7R&channel=%23test&username=motionbot&text=è¦‹è¾¼ã¿ãŒæ¸›å°‘ã—ã¾ã—ãŸã€‚&as_user=true', (error, response, body) ->
       if error or response.statusCode != 200
-        return msg.send('’Ê’m‚É¸”s‚µ‚Ü‚µ‚½...')
-      msg.send "³’m‚µ‚Ü‚µ‚½")
+        return msg.send('é€šçŸ¥ã«å¤±æ•—ã—ã¾ã—ãŸ...')
+      msg.send "æ‰¿çŸ¥ã—ã¾ã—ãŸ")
