@@ -1,5 +1,5 @@
 module.exports = (robot) ->
-  robot.respond /tiqav (.*)/i, (msg) ->
+  robot.respond /‚Ý‚ñ‚È‚É’Ê’m‚µ‚Ä/i, (msg) ->
     request = require('request');
     #request.get("http://api.tiqav.com/search.json?q=#{msg.match[1]}", (error, response, body) ->
     request.get("https://slack.com/api/chat.postMessage?token=xoxb-240392778389-Wzxl4A0TNuCc0v4d6yR8tq7R&channel=%23test&username=motionbot&text=Œ©ž‚Ý‚ªŒ¸­‚µ‚Ü‚µ‚½B&as_user=true", (error, response, body) ->
