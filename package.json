@@ -8,7 +8,6 @@
     "coffee-script": "^1.12.7",
     "hubot": "^2.19.0",
     "hubot-diagnostics": "0.0.2",
-    "hubot-docomo-dialogue": "https://github.com/bouzuya/hubot-docomo-dialogue/archive/master.tar.gz",
     "hubot-google-images": "^0.2.7",
     "hubot-google-translate": "^0.2.1",
     "hubot-help": "^0.2.2",
@@ -21,7 +20,7 @@
     "hubot-scripts": "^2.17.2",
     "hubot-shipit": "^0.2.1",
     "hubot-slack": "^4.4.0",
-    "request": "^2.81.0"
+    "request": "^2.82.0"
   },
   "engines": {
     "node": "0.10.x"
