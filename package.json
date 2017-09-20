@@ -19,9 +19,7 @@
     "hubot-salesforce": "0.0.2",
     "hubot-scripts": "^2.17.2",
     "hubot-shipit": "^0.2.1",
-    "hubot-slack": "^4.4.0",
-    "request": "^2.82.0",
-    "requests": "^0.2.2"
+    "hubot-slack": "^4.4.0"
   },
   "engines": {
     "node": "0.10.x"
