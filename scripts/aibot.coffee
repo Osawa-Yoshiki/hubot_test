@@ -27,7 +27,7 @@ module.exports = (robot) ->
 
 
   robot.respond /状況を#(.*)に通知して/i, (msg) ->
-    url = "https://slack.com/api/chat.postMessage?token=#{slack_token}&icon_url=https://goo.gl/udYNSb&channel=%23#{msg.match[1]}&username=motionbot&text=見込みが減少しました。&as_user=false")
+    url = "https://slack.com/api/chat.postMessage?token=#{slack_token}&icon_url=https://goo.gl/udYNSb&channel=%23#{msg.match[1]}&username=motionbot&text=見込みが減少しました。&as_user=false"
     request = msg.http(url)
                           .get()
     request (err, res, body) ->
@@ -35,7 +35,7 @@ module.exports = (robot) ->
       msg.send "承知しました"
 
   robot.respond /状況を#(.*)に配信して/i, (msg) ->
-    url = "https://slack.com/api/chat.postMessage?token=#{slack_token}&icon_url=https://goo.gl/udYNSb&channel=%23#{msg.match[1]}&username=motionbot&text=見込みが減少しました。&as_user=false")
+    url = "https://slack.com/api/chat.postMessage?token=#{slack_token}&icon_url=https://goo.gl/udYNSb&channel=%23#{msg.match[1]}&username=motionbot&text=見込みが減少しました。&as_user=false"
     request = msg.http(url)
                           .get()
     request (err, res, body) ->
