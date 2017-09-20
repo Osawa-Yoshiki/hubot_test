@@ -2,7 +2,7 @@ module.exports = (robot) ->
 
   robot.respond /テステス/i, (msg) ->
     request = require('request');
-    msg.send "ええええ")
+    msg.send "ええええ"
 
 
   robot.respond /みんなに通知して/i, (msg) ->
