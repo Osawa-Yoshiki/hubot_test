@@ -14,6 +14,9 @@ module.exports = (robot) ->
       msg.send "承知しました")
 
 
+  robot.respond /テスト/i, (msg) ->
+    msg.send "テスト！"
+
 
   robot.respond /状況を#(.*)に通知して/i, (msg) ->
     request = require('request');
