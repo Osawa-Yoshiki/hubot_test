@@ -25,10 +25,8 @@ module.exports = (robot) ->
 
 
   robot.respond /状況を#(.*)に通知して/i, (msg) ->
-    str1 = "https://slack.com/api/chat.postMessage?token=xoxp-239710252337-240366548533-243933168597-dd0b4afe621e4b3722c2da72accd1460&icon_url=https://goo.gl/udYNSb&channel=%23"
-    str2 = str1.concat(msg.match[1])
-    str3 = str2.concat("&username=motionbot&text=見込みが減少しました。&as_user=false")
-    request = msg.http(str3)
+    url = "https://slack.com/api/chat.postMessage?token=xoxp-239710252337-240366548533-243933168597-dd0b4afe621e4b3722c2da72accd1460&icon_url=https://goo.gl/udYNSb&channel=%23#{msg.match[1]}&username=motionbot&text=見込みが減少しました。&as_user=false")
+    request = msg.http(url)
                           .get()
     request (err, res, body) ->
       json = JSON.parse body
