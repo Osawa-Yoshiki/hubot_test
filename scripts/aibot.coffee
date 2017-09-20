@@ -4,7 +4,6 @@ slack_token = process.env.GENERAL_SLACK_TOKEN
 module.exports = (robot) ->
 
   robot.respond /テステス/i, (msg) ->
-    #request = require('request');
     msg.send #{slack_token}
 
   robot.respond /みんなに通知して/i, (msg) ->
