@@ -25,14 +25,14 @@ module.exports = (robot) ->
 
 
   robot.respond /状況を#(.*)に通知して/i, (msg) ->
-    request = msg.http("https://slack.com/api/chat.postMessage?token=xoxp-239710252337-240366548533-243933168597-dd0b4afe621e4b3722c2da72accd1460&icon_url=https://goo.gl/udYNSb&channel=%23#{msg.match[1]}&username=motionbot&text=見込みが減少しました。&as_user=false")
+    request = msg.http("https://slack.com/api/chat.postMessage?token=xoxp-239710252337-240366548533-243933168597-dd0b4afe621e4b3722c2da72accd1460&icon_url=https://goo.gl/udYNSb&channel=%23" + #{msg.match[1]} + "&username=motionbot&text=見込みが減少しました。&as_user=false")
                           .get()
     request (err, res, body) ->
       json = JSON.parse body
       msg.send "承知しました"
 
   robot.respond /状況を#(.*)に配信して/i, (msg) ->
-    request = msg.http("https://slack.com/api/chat.postMessage?token=xoxp-239710252337-240366548533-243933168597-dd0b4afe621e4b3722c2da72accd1460&icon_url=https://goo.gl/udYNSb&channel=%23#{msg.match[1]}&username=motionbot&text=見込みが減少しました。&as_user=false")
+    request = msg.http("https://slack.com/api/chat.postMessage?token=xoxp-239710252337-240366548533-243933168597-dd0b4afe621e4b3722c2da72accd1460&icon_url=https://goo.gl/udYNSb&channel=%23" + #{msg.match[1]} + "&username=motionbot&text=見込みが減少しました。&as_user=false")
                           .get()
     request (err, res, body) ->
       json = JSON.parse body
