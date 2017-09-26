@@ -3,6 +3,9 @@ slack_token = process.env.GENERAL_SLACK_TOKEN
 
 module.exports = (robot) ->
 
+  robot.respond /あなたのお名前は？/i, (msg) ->
+    msg.send "i am takagi."
+
   robot.respond /蛇の道は蛇/i, (msg) ->
     msg.send "#{slack_token}"
 
