@@ -25,14 +25,14 @@ module.exports = (robot) ->
     msg.send "【案件名：塚本日向商事／販売管理／MotionBoard】の金額が変更になりました\n https://goo.gl/v5aCiF"
 
   robot.respond /今期予算は達成する？/i, (msg) ->
-    msg.send "予算4079Mに対して4100Mで達成見込です。"
+    msg.send "予算4079Mに対して2791Mで達成見込です。"
   robot.respond /今期の予算は達成する？/i, (msg) ->
-    msg.send "予算4079Mに対して4100Mで達成見込です。"
+    msg.send "予算4079Mに対して2791Mで達成見込です。"
 
   robot.respond /予算の進捗を教えて/i, (msg) ->
-    msg.send "予算4079Mに対して4100M、達成率100.5%です。\n https://goo.gl/v5aCiF"
+    msg.send "予算4079Mに対して2791M、達成率68.4%です。\n https://goo.gl/v5aCiF"
   robot.respond /予算進捗を教えて/i, (msg) ->
-    msg.send "予算4079Mに対して4100M、達成率100.5%です。\n https://goo.gl/v5aCiF"
+    msg.send "予算4079Mに対して2791M、達成率68.4%です。\n https://goo.gl/v5aCiF"
 
   robot.respond /来期予算は達成する？/i, (msg) ->
     msg.send "予算4486Mに対して2467Mです。見込が2019M不足します。"
